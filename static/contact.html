@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kids-world</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+
+        .name {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-color: rgb(61, 101, 145);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #name {
+            /* display: flex; */
+            width: 300px;
+            text-align: center;
+            color: rgb(220, 218, 215);
+
+            font-size: 45px;
+        }
+
+
+        .li {
+            display: flex;
+            list-style-type: none;
+            font-size: 31px;
+            border: 3px solid rebeccapurple;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(56, 77, 98);
+            justify-content: space-evenly;
+        }
+
+        .items {
+            margin-right: 15px;
+            margin-left: 15px;
+            color: rgb(220, 218, 215);
+            margin-left: 101px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(220, 218, 215);
+        }
+
+        .images {
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            /* display: grid;
+
+            grid-template-areas:
+                'img1 img2 img3'
+                'img1 img2 img3';
+            padding: 0px;
+            margin: 0px; */
+        }
+
+        /* .img1 {
+            grid-area: img1;
+        }
+
+        .img2 {
+            grid-area: img2;
+        }
+
+        .img3 {
+            grid-area: img3;
+        } */
+        #about1 {
+            font-size: 40px;
+        }
+
+        /* .cont {
+            text-align: center;
+        } */
+
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical
+                /* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+
+        /* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* When moving the mouse over the submit button, add a darker green color */
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        /* Add a background color and some padding around the form */
+        .container {
+            /* border-radius: 5px;
+            background-color: rgb(56, 77, 98);
+            padding: 20px;
+            margin-top: 50px; */
+            min-width: 300px;
+            max-width: 75%;
+            margin-top: 100px;
+            margin-left: 100px;
+            background-color: rgb(56, 77, 98);
+            padding: 10px;
+            color: whitesmoke;
+
+        }
+
+        #home {
+            text-decoration: none;
+            color: rgb(220, 218, 215);
+        }
+
+        #about {
+            text-decoration: none;
+            color: rgb(220, 218, 215);
+        }
+
+        #contact {
+
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        #about:hover {
+            color: cadetblue;
+        }
+
+        #home:hover {
+            color: cadetblue;
+        }
+
+        .phone {
+            position: fixed;
+            top: 0;
+            right: 50px;
+            /* background-color: yellow; */
+            /* border: 3px solid #73AD21; */
+            height: 47px;
+            font-size: 25px;
+            display: flex;
+            color: yellow;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name {
+            color: whitesmoke;
+        }
+
+        .adress {
+            font-size: 50px;
+            color: whitesmoke;
+            ;
+            /* color: rgb(61, 101, 145); */
+
+        }
+
+        .cont {
+            /* max-width: 500px; */
+            min-width: 300px;
+            max-width: 75%;
+            margin-top: 100px;
+            margin-left: 100px;
+            background-color: rgb(56, 77, 98);
+            padding: 10px;
+            /* float: left; */
+        }
+
+        #about1 {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 20px;
+            color: whitesmoke;
+
+        }
+
+        @media (max-width:822px) {
+            .media {
+                display: block;
+                font-size: 0px;
+            }
+
+            .li {
+                font-size: 22px;
+            }
+        }
+
+        @media(max-width:681px) {
+            .media {
+                display: block;
+                font-size: 0px;
+            }
+
+            .ano {
+                width: 300px;
+                font-size: 20px;
+            }
+
+            .li {
+                font-size: 15px;
+            }
+
+            .image {
+                background-size: 100%;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url("abc5.jpg")
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone">
+        <p class="media">Phone: 8972495142</p>
+    </div>
+    <div class="name">
+        <p id="name">KIDS WORLD</p>
+    </div>
+    <div class="nav">
+        <ul class="li">
+            <li class="items"><a id="home" href="/">Home Page</a></li>
+            <li class="items"><a id="about" href="/about">About Us</a></li>
+            <li class="items"><a id="contact" href="/contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="images">
+        <img class="img1" src="./abc1.jpg" alt="">
+        <img class="img2" src="./abc2.jpg" alt="">
+        <img class="img3" src="./abc3.jpg" alt="">
+    </div>
+
+    <div class="contcont">
+        <div class="cont">
+            <h class="adress">Contact Us:</h>
+            <h3 class="name">Mr. Ajay Bansal</h3>
+            <p id="about1">
+                KIDS WORLD<br><br>
+                N.S. road Jaigaon<br>
+                Pin code 736182<br>
+                Jalpaiguri state West<br>
+                Bengal,<br><br><br><br>
+
+                Mr Ajay Bansal (Owner)<br>
+                Mobile : 8972495142
+            </p>
+        </div>
+        <!-- <img class="map" src="./abc4.jpg" alt=""> -->
+    </div>
+    <div class="container">
+        <form action="/contact" method="post">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <!-- <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select> -->
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+        </form>
+    </div>
+</body>
+<!-- <script>
+    function click() {
+        alert("submitted")
+    }
+</script> -->
+
+</html>

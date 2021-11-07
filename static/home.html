@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kids-world</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .name {
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            background-color: rgb(61, 101, 145);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #name {
+            /* display: flex; */
+            width: 300px;
+            text-align: center;
+            color: rgb(220, 218, 215);
+
+            font-size: 45px;
+        }
+
+
+        .li {
+            display: flex;
+            list-style-type: none;
+            font-size: 31px;
+            border: 3px solid rebeccapurple;
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(56, 77, 98);
+            justify-content: space-evenly;
+
+        }
+
+        .items {
+            /* margin-right: 15px; */
+            /* margin-left: 15px; */
+            color: rgb(220, 218, 215);
+            /* margin-left: 101px; */
+
+        }
+
+        /* a {
+            text-decoration: none;
+            color: rgb(220, 218, 215);
+        } */
+
+        .img {
+            max-width: 100%;
+        }
+
+        .image {
+            background-size: 100%;
+            max-width: 100%;
+            width: 100%;
+
+            background-repeat: no-repeat;
+            background-image: url("abc.jpg")
+        }
+
+        .anotherone {
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            margin: auto auto;
+            width: 100%;
+            height: 700px;
+            margin: auto;
+            font-size: 40px;
+            list-style-type: none;
+
+        }
+
+        */ .div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ano {
+            width: 650px;
+            margin: auto;
+            margin-top: 300px;
+            background-color: rgb(220, 218, 215);
+            opacity: 0.7;
+            border-radius: 50px;
+            transition: width 1s;
+        }
+
+        .ano:hover {
+            /* height: 400px; */
+            width: 700px;
+            /* height: 200px; */
+        }
+
+        .kidswear {
+            list-style-type: none;
+            text-align: center;
+            color: black;
+        }
+
+
+        #home {
+            text-decoration: none;
+            color: lightblue;
+        }
+
+        #about {
+            text-decoration: none;
+            color: rgb(220, 218, 215);
+        }
+
+        #contact {
+
+            text-decoration: none;
+            color: rgb(220, 218, 215);
+        }
+
+        #about:hover {
+            color: cadetblue;
+        }
+
+        #contact:hover {
+            color: cadetblue;
+        }
+
+        .phone {
+            position: fixed;
+            top: 0;
+            right: 50px;
+            /* background-color: yellow; */
+            /* border: 3px solid #73AD21; */
+            height: 47px;
+            font-size: 25px;
+            display: flex;
+            color: yellow;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media (max-width:822px) {
+            .media {
+                display: block;
+                font-size: 0px;
+            }
+
+            .li {
+                font-size: 22px;
+            }
+        }
+
+        @media(max-width:681px) {
+            .media {
+                display: block;
+                font-size: 0px;
+            }
+
+            .li {
+                font-size: 15px;
+            }
+
+            .ano {
+                width: 300px;
+                font-size: 20px;
+            }
+
+            .image {
+                background-size: 100%;
+                max-width: 100%;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-image: url("abc5.jpg")
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="phone">
+        <p class="media">Phone: 8972495142</p>
+    </div>
+    <div class="name">
+        <p id="name">KIDS WORLD</p>
+    </div>
+    <div class="nav">
+        <ul class="li">
+            <li class="items"><a id="home" href="/">Home Page</a></li>
+            <li class="items"><a id="about" href="/about">About Us</a></li>
+            <li class="items"><a id="contact" href="/contact">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <div class="anotherone">
+            <div class="ano">
+                <ul class="text">
+                    <li class="kidswear">Kids Wear</li>
+                    <li class="kidswear">"Selection from all across the country"</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
